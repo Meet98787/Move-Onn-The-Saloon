@@ -35,6 +35,16 @@
     rel="stylesheet" />
   <!-- css -->
   <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script>
+  const swiper = new Swiper('.swiper', {
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    },
+  });
+</script>
 
   <script>
     tailwind.config = {
@@ -81,36 +91,35 @@
 
 <body>
 
-    <div class="h-[119vh] bg-top bg-cover bg-no-repeat md:w-full" style="background-image: url('assets/image/Hero.png')">
-      <!-- header start -->
-      <header class="max-w-[1440px]  mx-auto pt-7 px-4 md:px-0">
-        <nav>
-          <div class="flex justify-between items-center">
-            <div>
-              <h2 class="text-white font-cormorantgaramond font-bold text-[26px] md:text-[58.71px] leading-none">
-                Move Onn
-              </h2>
-              <h5 class="text-gold text-[13px] md:text-[29.36px] font-cormorantgaramond font-semibold leading-none">
-                The Salon
-              </h5>
-            </div>
-            <!-- SVG Button -->
-            <div>
-              <svg onclick="toggleSidebar()"  viewBox="0 0 46 46" fill="none"
-                xmlns="http://www.w3.org/2000/svg" class="cursor-pointer w-[22px] h-[22px] md:w-[46px] md:[h-46px]">
-                <path
-                  d="M11.5 9.1999C11.5 7.92969 12.5298 6.8999 13.8 6.8999H43.7C44.9702 6.8999 46 7.92969 46 9.1999C46 10.4701 44.9702 11.4999 43.7 11.4999H13.8C12.5298 11.4999 11.5 10.47 11.5 9.1999ZM43.7 20.6999H2.3C1.02979 20.6999 0 21.7298 0 22.9999C0 24.2701 1.02979 25.2999 2.3 25.2999H43.7C44.9702 25.2999 46 24.2701 46 22.9999C46 21.7298 44.9702 20.6999 43.7 20.6999ZM43.7 34.4999H23C21.7299 34.4999 20.7 35.5297 20.7 36.7999C20.7 38.07 21.7299 39.0999 23 39.0999H43.7C44.9702 39.0999 46 38.07 46 36.7999C46 35.5297 44.9702 34.4999 43.7 34.4999Z"
-                  fill="#C2A74E" />
-              </svg>
-            </div>
+  <div class="h-[119vh] bg-top bg-cover bg-no-repeat md:w-full" style="background-image: url('assets/image/Hero.png')">
+    <!-- header start -->
+    <header class="max-w-[1440px] mx-auto pt-7 px-4">
+      <nav>
+        <div class="flex justify-between items-center">
+          <div>
+            <h2 class="text-white font-cormorantgaramond font-bold text-[20px] md:text-[58.71px] leading-none">
+              Move Onn
+            </h2>
+            <h5 class="text-gold text-[10px] md:text-[29.36px] font-cormorantgaramond font-semibold leading-none">
+              The Salon
+            </h5>
           </div>
-        </nav>
-      </header>
-      <!-- heder end -->
-
-    
-    <!-- line  -->
-    <div class="relative border-t border-transparent h-2 w-full mt-8" style="
+          <!-- SVG Button -->
+          <div>
+            <svg onclick="toggleSidebar()" viewBox="0 0 46 46" fill="none" xmlns="http://www.w3.org/2000/svg"
+              class="cursor-pointer w-[18px] h-[18px] md:w-[46px] md:[h-46px]">
+              <path
+                d="M11.5 9.1999C11.5 7.92969 12.5298 6.8999 13.8 6.8999H43.7C44.9702 6.8999 46 7.92969 46 9.1999C46 10.4701 44.9702 11.4999 43.7 11.4999H13.8C12.5298 11.4999 11.5 10.47 11.5 9.1999ZM43.7 20.6999H2.3C1.02979 20.6999 0 21.7298 0 22.9999C0 24.2701 1.02979 25.2999 2.3 25.2999H43.7C44.9702 25.2999 46 24.2701 46 22.9999C46 21.7298 44.9702 20.6999 43.7 20.6999ZM43.7 34.4999H23C21.7299 34.4999 20.7 35.5297 20.7 36.7999C20.7 38.07 21.7299 39.0999 23 39.0999H43.7C44.9702 39.0999 46 38.07 46 36.7999C46 35.5297 44.9702 34.4999 43.7 34.4999Z"
+                fill="#C2A74E" />
+            </svg>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- header end -->
+  
+    <!-- line -->
+    <div class="relative border-t border-transparent h-2 w-full mt-6 md:mt-8" style="
             border-image-source: linear-gradient(
               90deg,
               rgba(194, 167, 78, 0) 0%,
@@ -119,27 +128,36 @@
             border-image-slice: 1;
           ">
     </div>
-
+  
     <!-- banner start -->
-
     <main>
-      <div class="absolute top-[455px] left-[-257px] hidden md:block text-gold font-alexbrush rotate-[270deg] opacity-12 text-[128px] ">
+      <div
+        class="absolute hidden md:block top-[455px] left-[-257px] text-gold font-alexbrush rotate-[270deg] opacity-12 text-[64px] md:text-[128px]">
         Move Onn Salon
       </div>
-      <div class="max-w-[1440px] flex mx-auto items-center m-[200px]">
+      <div class="max-w-[1440px] flex flex-col md:flex-row mx-auto items-center m-[100px] md:m-[200px]">
         <div class="w-full md:w-1/2">
-          <span class="text-gold text-[16px] md:text-[36px] font-semibold font-cormorantgaramond capitalize">Welcome to Move onn
-            Salon</span>
-          <h1 class="text-white text-[32px] md:text-[74px] font-bold font-playfair leading-[81px] mt-[10px]">
-            Where Beauty <span class="text-transparent bg-clip-text bg-gradient-to-r from-[#C2A74E] to-[#685000]">
-              Meets </span>Elegance
+          <span class="text-gold text-[12px] md:text-[36px] font-semibold font-cormorantgaramond capitalize">
+            Welcome to Move Onn Salon
+          </span>
+          <h1 class="text-white text-[24px] md:text-[74px] font-bold font-playfair leading-[36px] md:leading-[81px] mt-4 md:mt-[10px]">
+            Where Beauty <span
+              class="text-transparent bg-clip-text bg-gradient-to-r from-[#C2A74E] to-[#685000]">
+              Meets
+            </span>
+            Elegance
           </h1>
-          <p class="text-white capitalize text-[20px] font-normal mt-[10px] ">Lorem ipsum dolor sit amet, consectetur
-            adipiscing elit. In molestie vestibulum leo, vitae pharetra justo sollicitudin vitae.</p>
+          <p
+            class="text-white capitalize text-[14px] md:text-[20px] font-normal mt-2 md:mt-[10px]">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. In molestie
+            vestibulum leo, vitae pharetra justo sollicitudin vitae.
+          </p>
           <div
-            class="text-white flex bg-gradient-to-b from-[#C2A74E] to-[#685000] h-[55px] w-[244px] rounded-[10px] items-center text-center place-content-center mt-7 relative">
-            <span class=" text-[20px] font-semibold font-outfit">Book Appointment</span>
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            class="text-white flex bg-gradient-to-b from-[#C2A74E] to-[#685000] h-[45px] md:h-[55px] w-[200px] md:w-[244px] rounded-[8px] md:rounded-[10px] items-center text-center place-content-center mt-5 md:mt-7 relative">
+            <span class="text-[16px] md:text-[20px] font-semibold font-outfit">
+              Book Appointment
+            </span>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path
                 d="M12.0019 19C11.8033 19.0012 11.6088 18.9432 11.4433 18.8334C11.2778 18.7236 11.1487 18.567 11.0725 18.3835C10.9964 18.2001 10.9766 17.9981 11.0156 17.8033C11.0547 17.6086 11.1509 17.4299 11.2919 17.29L16.5919 12L11.2919 6.71003C11.1281 6.51873 11.0425 6.27265 11.0522 6.02097C11.0619 5.7693 11.1663 5.53056 11.3443 5.35246C11.5224 5.17437 11.7612 5.07004 12.0129 5.06032C12.2645 5.05059 12.5106 5.1362 12.7019 5.30003L18.7019 11.3C18.8882 11.4874 18.9927 11.7408 18.9927 12.005C18.9927 12.2692 18.8882 12.5227 18.7019 12.71L12.7019 18.71C12.5156 18.8948 12.2642 18.9989 12.0019 19Z"
                 fill="white" />
@@ -152,10 +170,450 @@
         </div>
       </div>
     </main>
-
     <!-- banner end -->
-
   </div>
+  
+  <!-- Get to know us start -->
+<div class="bg-bgprimery py-10 md:py-20">
+
+  <div class="w-full md:w-[1440px] mx-auto flex flex-col md:flex-row">
+    <!-- Left Image Section -->
+    <div class="w-full md:w-1/4 mb-4 md:mb-0">
+      <img src="assets/image/about-1-1.jpg.png" alt="">
+    </div>
+    <!-- Center Image Section with Info -->
+    <div class="w-full md:w-1/4 relative mb-4 md:mb-0">
+      <img src="assets/image/about-1-2.jpg.png" alt="">
+      <div class="p-3 bg-bgsecendary text-white max-w-sm w-10/12 absolute bottom-[-20px] md:bottom-[100px] left-0 md:left-[-60px]">
+        <div class="border w-full flex items-center justify-center p-3">
+          <!-- Icon Section -->
+          <div class="w-10 h-10 md:w-12 md:h-12 mr-2 md:mr-4 flex items-center justify-center bg-gold text-bgprimery rounded-full">
+            <img src="assets/image/Symbol.png" alt="">
+          </div>
+          <!-- Content Section -->
+          <div>
+            <h4 class="font-outfit text-[16px] md:text-[20px] leading-[20px] md:leading-[27px] mb-1">Book Now</h4>
+            <p class="text-[#6E6B70] text-[14px] md:text-[20px] font-outfit">+92 (003) 68-090</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Right Content Section -->
+    <div class="w-full md:w-1/2 flex flex-col items-start">
+      <h4 class="font-cormorantgaramond text-[24px] md:text-[36px] text-gold font-bold capitalize">Get to know us</h4>
+      <h3 class="text-[28px] md:text-[48px] text-white font-playfair font-bold mt-2 md:mt-0">
+        Where Beauty and Elegance Converge
+      </h3>
+      <div class="flex flex-wrap gap-2 mt-4 md:mt-3">
+        <button class="bg-bgsecendary px-6 md:px-12 py-2 md:py-3 text-white font-outfit text-[16px] md:text-[20px] font-medium">Best Products</button>
+        <button class="bg-bgsecendary px-6 md:px-12 py-2 md:py-3 text-white font-outfit text-[16px] md:text-[20px] font-medium">Gift Packages</button>
+      </div>
+      <p class="text-gold font-outfit font-normal text-[14px] md:text-[20px] mt-4 md:mt-3">
+        We Offer A Variety Of Facial Book And Enjoy Our Special Treatments Services to Suit Your Individual
+        Skin Care Needs.
+      </p>
+      <p class="text-white font-outfit text-[14px] md:text-[20px] capitalize mt-2 md:mt-3">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. In molestie vestibulum leo, Lorem Ipsum
+        consectetur adipiscing elit. In molestie has been the industry's vitae pharetra justo sollicitudin vitae.
+      </p>
+      <div
+        class="text-white flex bg-gradient-to-b from-[#C2A74E] to-[#685000] p-2 md:p-3 w-36 md:w-44 rounded-[8px] md:rounded-[10px] items-center text-center place-content-center mt-5 md:mt-7 relative">
+        <span class="text-[16px] md:text-[20px] font-semibold font-outfit">Read More</span>
+        <svg width="20" height="20" md:width="24" md:height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M12.0019 19C11.8033 19.0012 11.6088 18.9432 11.4433 18.8334C11.2778 18.7236 11.1487 18.567 11.0725 18.3835C10.9964 18.2001 10.9766 17.9981 11.0156 17.8033C11.0547 17.6086 11.1509 17.4299 11.2919 17.29L16.5919 12L11.2919 6.71003C11.1281 6.51873 11.0425 6.27265 11.0522 6.02097C11.0619 5.7693 11.1663 5.53056 11.3443 5.35246C11.5224 5.17437 11.7612 5.07004 12.0129 5.06032C12.2645 5.05059 12.5106 5.1362 12.7019 5.30003L18.7019 11.3C18.8882 11.4874 18.9927 11.7408 18.9927 12.005C18.9927 12.2692 18.8882 12.5227 18.7019 12.71L12.7019 18.71C12.5156 18.8948 12.2642 18.9989 12.0019 19Z"
+            fill="white" />
+          <path
+            d="M6.00191 19.0002C5.80329 19.0013 5.60882 18.9433 5.4433 18.8335C5.27778 18.7237 5.14871 18.5671 5.07254 18.3837C4.99637 18.2002 4.97656 17.9983 5.01563 17.8035C5.0547 17.6088 5.15088 17.4301 5.29191 17.2902L10.5919 12.0002L5.29191 6.71019C5.10361 6.52188 4.99782 6.26649 4.99782 6.00019C4.99782 5.73388 5.10361 5.47849 5.29191 5.29019C5.48021 5.10188 5.73561 4.99609 6.00191 4.99609C6.26821 4.99609 6.52361 5.10188 6.71191 5.29019L12.7119 11.2902C12.8982 11.4775 13.0027 11.731 13.0027 11.9952C13.0027 12.2594 12.8982 12.5128 12.7119 12.7002L6.71191 18.7002C6.6193 18.7947 6.50885 18.8698 6.38698 18.9213C6.2651 18.9728 6.13422 18.9996 6.00191 19.0002Z"
+            fill="white" />
+        </svg>
+        <img src="assets/image/Vector 1 (1).png" alt="" class="absolute left-[4px] top-[3px]">
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Get to know us end -->
+<!-- booking start -->
+<div style="background-image: url('assets/image/Rectangle\\ 7.png');" class="bg-top bg-cover bg-no-repeat">
+  <div style="background-image: url(assets/image/div.video-two__shape.png);" class="h-auto md:h-[698px]">
+    <div class="w-full md:w-[1440px] mx-auto flex flex-col md:flex-row items-center justify-between py-10 md:py-[260px]">
+      <!-- Left Content -->
+      <div class="w-full md:w-[60%] text-center md:text-left px-4 md:px-0">
+        <h2 class="text-[28px] md:text-[60px] font-bold font-playfair text-white">
+          Book & Feel Our Incredible Hair Wash Experience
+        </h2>
+        <div
+          class="text-white flex bg-gradient-to-b from-[#C2A74E] to-[#685000] h-[45px] md:h-[55px] w-[200px] md:w-[244px] rounded-[8px] md:rounded-[10px] items-center text-center place-content-center mt-5 md:mt-7 relative mx-auto md:mx-0">
+          <span class="text-[16px] md:text-[20px] font-semibold font-outfit">Book Appointment</span>
+          <svg width="20" height="20" md:width="24" md:height="24" viewBox="0 0 24 24" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M12.0019 19C11.8033 19.0012 11.6088 18.9432 11.4433 18.8334C11.2778 18.7236 11.1487 18.567 11.0725 18.3835C10.9964 18.2001 10.9766 17.9981 11.0156 17.8033C11.0547 17.6086 11.1509 17.4299 11.2919 17.29L16.5919 12L11.2919 6.71003C11.1281 6.51873 11.0425 6.27265 11.0522 6.02097C11.0619 5.7693 11.1663 5.53056 11.3443 5.35246C11.5224 5.17437 11.7612 5.07004 12.0129 5.06032C12.2645 5.05059 12.5106 5.1362 12.7019 5.30003L18.7019 11.3C18.8882 11.4874 18.9927 11.7408 18.9927 12.005C18.9927 12.2692 18.8882 12.5227 18.7019 12.71L12.7019 18.71C12.5156 18.8948 12.2642 18.9989 12.0019 19Z"
+              fill="white" />
+            <path
+              d="M6.00191 19.0002C5.80329 19.0013 5.60882 18.9433 5.4433 18.8335C5.27778 18.7237 5.14871 18.5671 5.07254 18.3837C4.99637 18.2002 4.97656 17.9983 5.01563 17.8035C5.0547 17.6088 5.15088 17.4301 5.29191 17.2902L10.5919 12.0002L5.29191 6.71019C5.10361 6.52188 4.99782 6.26649 4.99782 6.00019C4.99782 5.73388 5.10361 5.47849 5.29191 5.29019C5.48021 5.10188 5.73561 4.99609 6.00191 4.99609C6.26821 4.99609 6.52361 5.10188 6.71191 5.29019L12.7119 11.2902C12.8982 11.4775 13.0027 11.731 13.0027 11.9952C13.0027 12.2594 12.8982 12.5128 12.7119 12.7002L6.71191 18.7002C6.6193 18.7947 6.50885 18.8698 6.38698 18.9213C6.2651 18.9728 6.13422 18.9996 6.00191 19.0002Z"
+              fill="white" />
+          </svg>
+          <img src="assets/image/Vector 1.png" alt="" class="absolute left-[4px]">
+        </div>
+      </div>
+      <!-- Right Image -->
+      <div class="w-full md:w-1/3 mt-6 md:mt-0">
+        <img src="assets/image/Group 1116601225.png" alt="" class="mx-auto md:mx-0">
+      </div>
+    </div>
+  </div>
+</div>
+<!-- booking end -->
+<!-- Gallery start -->
+<div class="bg-bgprimery py-10 md:py-20">
+  <div class="w-full md:w-[1440px] mx-auto text-center px-4 md:px-0">
+    <h4 class="text-gold text-[24px] md:text-[36px] font-cormorantgaramond font-semibold">Gallery</h4>
+    <h2 class="font-playfair text-[28px] md:text-[48px] text-white font-bold">Picture Perfect Moments</h2>
+    <img src="assets/image/gallery/image 12.png" alt="" class="mx-auto mb-6 md:mb-10 mt-2">
+    <!-- First Row -->
+    <div class="grid grid-cols-2 md:flex md:w-full md:gap-2">
+      <div class="w-full md:w-1/4 mb-2 md:mb-0">
+        <img src="assets/image/gallery/Group 1116601232.png" alt="" class="w-full">
+      </div>
+      <div class="w-full md:w-1/4 mb-2 md:mb-0">
+        <img src="assets/image/gallery/Rectangle 16.png" alt="" class="w-full">
+      </div>
+      <div class="w-full md:w-1/2 mb-2 md:mb-0">
+        <img src="assets/image/gallery/Rectangle 20.png" alt="" class="w-full">
+      </div>
+    </div>
+    <!-- Second Row -->
+    <div class="grid grid-cols-2 md:flex md:w-full md:gap-2 my-4 md:my-5">
+      <div class="w-full md:w-1/2 mb-2 md:mb-0">
+        <img src="assets/image/gallery/Rectangle 18.png" alt="" class="w-full">
+      </div>
+      <div class="w-full md:w-1/4 mb-2 md:mb-0">
+        <img src="assets/image/gallery/Rectangle 21.png" alt="" class="w-full">
+      </div>
+      <div class="w-full md:w-1/4">
+        <img src="assets/image/gallery/Rectangle 19.png" alt="" class="w-full">
+      </div>
+    </div>
+    <!-- View More Button -->
+    <div
+      class="text-white flex bg-gradient-to-b from-[#C2A74E] to-[#685000] p-2 md:p-3 w-36 md:w-44 mx-auto rounded-[8px] md:rounded-[10px] items-center text-center place-content-center mt-6 md:mt-10 relative">
+      <span class="text-[16px] md:text-[20px] font-semibold font-outfit">View More</span>
+      <svg width="20" height="20" md:width="24" md:height="24" viewBox="0 0 24 24" fill="none"
+        xmlns="http://www.w3.org/2000/svg">
+        <path
+          d="M12.0019 19C11.8033 19.0012 11.6088 18.9432 11.4433 18.8334C11.2778 18.7236 11.1487 18.567 11.0725 18.3835C10.9964 18.2001 10.9766 17.9981 11.0156 17.8033C11.0547 17.6086 11.1509 17.4299 11.2919 17.29L16.5919 12L11.2919 6.71003C11.1281 6.51873 11.0425 6.27265 11.0522 6.02097C11.0619 5.7693 11.1663 5.53056 11.3443 5.35246C11.5224 5.17437 11.7612 5.07004 12.0129 5.06032C12.2645 5.05059 12.5106 5.1362 12.7019 5.30003L18.7019 11.3C18.8882 11.4874 18.9927 11.7408 18.9927 12.005C18.9927 12.2692 18.8882 12.5227 18.7019 12.71L12.7019 18.71C12.5156 18.8948 12.2642 18.9989 12.0019 19Z"
+          fill="white" />
+        <path
+          d="M6.00191 19.0002C5.80329 19.0013 5.60882 18.9433 5.4433 18.8335C5.27778 18.7237 5.14871 18.5671 5.07254 18.3837C4.99637 18.2002 4.97656 17.9983 5.01563 17.8035C5.0547 17.6088 5.15088 17.4301 5.29191 17.2902L10.5919 12.0002L5.29191 6.71019C5.10361 6.52188 4.99782 6.26649 4.99782 6.00019C4.99782 5.73388 5.10361 5.47849 5.29191 5.29019C5.48021 5.10188 5.73561 4.99609 6.00191 4.99609C6.26821 4.99609 6.52361 5.10188 6.71191 5.29019L12.7119 11.2902C12.8982 11.4775 13.0027 11.731 13.0027 11.9952C13.0027 12.2594 12.8982 12.5128 12.7119 12.7002L6.71191 18.7002C6.6193 18.7947 6.50885 18.8698 6.38698 18.9213C6.2651 18.9728 6.13422 18.9996 6.00191 19.0002Z"
+          fill="white" />
+      </svg>
+      <img src="assets/image/Vector 1 (1).png" alt="" class="absolute left-[4px] top-[3px]">
+    </div>
+  </div>
+</div>
+<!-- Gallery end -->
+<!-- Services start -->
+<div class="bg-bgsecendary py-10 md:py-16 font-semibold">
+  <div class="w-full md:w-[1440px] mx-auto text-center px-4 md:px-0">
+    <h4 class="text-[24px] md:text-[36px] font-cormorantgaramond text-gold">Services</h4>
+    <h3 class="text-white font-playfair text-[28px] md:text-[48px]">We Provide Better</h3>
+    <img src="assets/image/gallery/image 12.png" alt="" class="mx-auto mb-4 md:mb-7">
+    
+    <!-- Services Grid -->
+    <div class="grid grid-cols-2 md:flex md:gap-4 gap-3">
+      <!-- Service Card 1 -->
+      <div class="w-full md:w-[16.6%] text-center bg-bgprimery flex flex-col items-center py-6 md:py-10">
+        <img src="assets/image/services/Group.svg" alt="" class="mb-3 md:mb-5">
+        <span class="text-[16px] md:text-[24px] font-playfair text-gold font-normal">Hair Coloring</span>
+      </div>
+      
+      <!-- Service Card 2 -->
+      <div class="w-full md:w-[16.6%] text-center bg-bgprimery flex flex-col items-center py-6 md:py-10">
+        <img src="assets/image/services/Frame (2).svg" alt="" class="mb-3 md:mb-5">
+        <span class="text-[16px] md:text-[24px] font-playfair text-white font-normal">Haircut Styles</span>
+      </div>
+      
+      <!-- Service Card 3 -->
+      <div class="w-full md:w-[16.6%] text-center bg-bgprimery flex flex-col items-center py-6 md:py-10">
+        <img src="assets/image/services/Group (1).png" alt="" class="mb-3 md:mb-5">
+        <span class="text-[16px] md:text-[24px] font-playfair text-white font-normal">Haircut Styles</span>
+      </div>
+      
+      <!-- Service Card 4 -->
+      <div class="w-full md:w-[16.6%] text-center bg-bgprimery flex flex-col items-center py-6 md:py-10">
+        <img src="assets/image/services/Frame.png" alt="" class="mb-3 md:mb-5">
+        <span class="text-[16px] md:text-[24px] font-playfair text-white font-normal">Smooth Shave</span>
+      </div>
+      
+      <!-- Service Card 5 -->
+      <div class="w-full md:w-[16.6%] text-center bg-bgprimery flex flex-col items-center py-6 md:py-10">
+        <img src="assets/image/services/Frame (1).png" alt="" class="mb-3 md:mb-5">
+        <span class="text-[16px] md:text-[24px] font-playfair text-white font-normal">Smooth Shave</span>
+      </div>
+      
+      <!-- Service Card 6 -->
+      <div class="w-full md:w-[16.6%] text-center bg-bgprimery flex flex-col items-center py-6 md:py-10">
+        <img src="assets/image/services/Group 1000002632.png" alt="" class="mb-3 md:mb-5">
+        <span class="text-[16px] md:text-[24px] font-playfair text-white font-normal">Smooth Shave</span>
+      </div>
+    </div>
+
+    <!-- View More Button -->
+    <div
+      class="text-white flex bg-gradient-to-b from-[#C2A74E] to-[#685000] p-2 md:p-3 w-36 md:w-44 mx-auto rounded-[8px] md:rounded-[10px] items-center text-center place-content-center mt-6 md:mt-10 relative">
+      <span class="text-[16px] md:text-[20px] font-semibold font-outfit">View More</span>
+      <svg width="20" height="20" md:width="24" md:height="24" viewBox="0 0 24 24" fill="none"
+        xmlns="http://www.w3.org/2000/svg">
+        <path
+          d="M12.0019 19C11.8033 19.0012 11.6088 18.9432 11.4433 18.8334C11.2778 18.7236 11.1487 18.567 11.0725 18.3835C10.9964 18.2001 10.9766 17.9981 11.0156 17.8033C11.0547 17.6086 11.1509 17.4299 11.2919 17.29L16.5919 12L11.2919 6.71003C11.1281 6.51873 11.0425 6.27265 11.0522 6.02097C11.0619 5.7693 11.1663 5.53056 11.3443 5.35246C11.5224 5.17437 11.7612 5.07004 12.0129 5.06032C12.2645 5.05059 12.5106 5.1362 12.7019 5.30003L18.7019 11.3C18.8882 11.4874 18.9927 11.7408 18.9927 12.005C18.9927 12.2692 18.8882 12.5227 18.7019 12.71L12.7019 18.71C12.5156 18.8948 12.2642 18.9989 12.0019 19Z"
+          fill="white" />
+        <path
+          d="M6.00191 19.0002C5.80329 19.0013 5.60882 18.9433 5.4433 18.8335C5.27778 18.7237 5.14871 18.5671 5.07254 18.3837C4.99637 18.2002 4.97656 17.9983 5.01563 17.8035C5.0547 17.6088 5.15088 17.4301 5.29191 17.2902L10.5919 12.0002L5.29191 6.71019C5.10361 6.52188 4.99782 6.26649 4.99782 6.00019C4.99782 5.73388 5.10361 5.47849 5.29191 5.29019C5.48021 5.10188 5.73561 4.99609 6.00191 4.99609C6.26821 4.99609 6.52361 5.10188 6.71191 5.29019L12.7119 11.2902C12.8982 11.4775 13.0027 11.731 13.0027 11.9952C13.0027 12.2594 12.8982 12.5128 12.7119 12.7002L6.71191 18.7002C6.6193 18.7947 6.50885 18.8698 6.38698 18.9213C6.2651 18.9728 6.13422 18.9996 6.00191 19.0002Z"
+          fill="white" />
+      </svg>
+      <img src="assets/image/Vector 1 (1).png" alt="" class="absolute left-[4px] top-[3px]">
+    </div>
+  </div>
+</div>
+<!-- Services end -->
+<!-- Testimonials Section -->
+<div class="bg-bgprimery py-16">
+  <div class="max-w-[1440px] mx-auto">
+    <!-- PC Section -->
+    <div class="hidden md:block">
+      <!-- Heading -->
+      <div class="flex justify-between items-center">
+        <div>
+          <h4 class="text-gold text-[36px] font-semibold font-cormorantgaramond">Our Testimonials</h4>
+          <h2 class="text-white font-cormorantgaramond text-[50px] font-bold">What They Say?</h2>
+        </div>
+        <div>
+          <p class="font-outfit text-[20px] text-white max-w-2xl mx-auto text-end">
+            Lorem Ipsum Dolor Sit Amet, Consectetur Adipiscing Elit. In Molestie Vestibulum Leo,
+            Lorem Ipsum Has Been The Industry's Vitae.
+          </p>
+        </div>
+      </div>
+      <!-- Testimonials Cards -->
+      <div class="flex justify-between items-center gap-5 w-[80%] mt-10 px-5 mx-auto">
+        <!-- Testimonial Card 1 -->
+        <div class="p-8 col-span-3 bg-cover bg-no-repeat"
+          style="background-image: url('assets/image/Rectangle\ 8.png');">
+          <div class="flex items-center">
+            <div>
+              <img src="assets/image/testimonials/Group 1116601214.png" alt="Sarah Albert" class="w-full" />
+            </div>
+            <div class="pl-5">
+              <div class="flex mb-2">
+                <img src="assets/image/Group 1116601212.png" alt="">
+              </div>
+              <h3 class="text-[20px] font-cormorantgaramond text-white font-medium">SARAH ALBERT</h3>
+              <p class="text-[#6E6B70] text-[16px] font-outfit">Co-Founder</p>
+            </div>
+          </div>
+          <div class="mt-6 text-center">
+            <hr class="border-t border-gray-500 my-4">
+            <p class="font-outfit text-[20px] leading-[30px] text-[#6E6B70]">
+              Lorem Ipsum We A Dolor Sit Amet, Consectetur Adipiscing Elit. Then In Molestie Vestibulum Cleo, Lorem
+              Ipsum
+              Has Been The Industry's Vitae.
+            </p>
+          </div>
+        </div>
+        <!-- Testimonial Card 2 -->
+        <div class="p-8 col-span-3 bg-cover bg-no-repeat"
+          style="background-image: url('assets/image/Rectangle\ 8.png');">
+          <div class="flex items-center">
+            <div>
+              <img src="assets/image/testimonials/Group 1116601214 (1).png" alt="Sarah Albert" class="w-full" />
+            </div>
+            <div class="pl-5">
+              <div class="flex mb-2">
+                <img src="assets/image/Group 1116601212.png" alt="">
+              </div>
+              <h3 class="text-[20px] font-cormorantgaramond text-white font-medium">SARAH ALBERT</h3>
+              <p class="text-[#6E6B70] text-[16px] font-outfit">Co-Founder</p>
+            </div>
+          </div>
+          <div class="mt-6 text-center">
+            <hr class="border-t border-gray-500 my-4">
+            <p class="font-outfit text-[20px] leading-[30px] text-[#6E6B70]">
+              Lorem Ipsum We A Dolor Sit Amet, Consectetur Adipiscing Elit. Then In Molestie Vestibulum Cleo, Lorem
+              Ipsum
+              Has Been The Industry's Vitae.
+            </p>
+          </div>
+        </div>
+        <!-- Testimonial Card 3 -->
+        <div class="p-8 col-span-3 bg-cover bg-no-repeat"
+          style="background-image: url('assets/image/Rectangle\ 8.png');">
+          <div class="flex items-center">
+            <div>
+              <img src="assets/image/testimonials/Group 1116601214 (2).png" alt="Sarah Albert" class="w-full" />
+            </div>
+            <div class="pl-5">
+              <div class="flex mb-2">
+                <img src="assets/image/Group 1116601212.png" alt="">
+              </div>
+              <h3 class="text-[20px] font-cormorantgaramond text-white font-medium">SARAH ALBERT</h3>
+              <p class="text-[#6E6B70] text-[16px] font-outfit">Co-Founder</p>
+            </div>
+          </div>
+          <div class="mt-6 text-center">
+            <hr class="border-t border-gray-500 my-4">
+            <p class="font-outfit text-[20px] leading-[30px] text-[#6E6B70]">
+              Lorem Ipsum We A Dolor Sit Amet, Consectetur Adipiscing Elit. Then In Molestie Vestibulum Cleo, Lorem
+              Ipsum
+              Has Been The Industry's Vitae.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Mobile Slider Section -->
+    <div class="block md:hidden">
+      <!-- Heading -->
+      <div class="text-center px-4">
+        <h4 class="text-gold text-[24px] font-semibold font-cormorantgaramond">Our Testimonials</h4>
+        <h2 class="text-white font-cormorantgaramond text-[30px] font-bold">What They Say?</h2>
+        <p class="font-outfit text-[16px] text-white mt-4">
+          Lorem Ipsum Dolor Sit Amet, Consectetur Adipiscing Elit. In Molestie Vestibulum Leo,
+          Lorem Ipsum Has Been The Industry's Vitae.
+        </p>
+      </div>
+
+      <!-- Slider -->
+      <div class="swiper mt-10">
+        <div class="swiper-wrapper">
+          <!-- Slide 1 -->
+          <div class="swiper-slide bg-cover bg-no-repeat p-5"
+            style="background-image: url('assets/image/Rectangle\ 8.png');">
+            <div class="flex items-center">
+              <img src="assets/image/testimonials/Group 1116601214.png" alt="Sarah Albert" class="w-16 h-16 rounded-full">
+              <div class="pl-4">
+                <h3 class="text-[18px] font-cormorantgaramond text-white font-medium">SARAH ALBERT</h3>
+                <p class="text-[#6E6B70] text-[14px] font-outfit">Co-Founder</p>
+              </div>
+            </div>
+            <p class="font-outfit text-[14px] leading-[20px] text-[#6E6B70] mt-5">
+              Lorem Ipsum We A Dolor Sit Amet, Consectetur Adipiscing Elit. Then In Molestie Vestibulum Cleo, Lorem
+              Ipsum
+              Has Been The Industry's Vitae.
+            </p>
+          </div>
+          <!-- Slide 2 -->
+          <div class="swiper-slide bg-cover bg-no-repeat p-5"
+            style="background-image: url('assets/image/Rectangle\ 8.png');">
+            <div class="flex items-center">
+              <img src="assets/image/testimonials/Group 1116601214 (1).png" alt="Sarah Albert" class="w-16 h-16 rounded-full">
+              <div class="pl-4">
+                <h3 class="text-[18px] font-cormorantgaramond text-white font-medium">SARAH ALBERT</h3>
+                <p class="text-[#6E6B70] text-[14px] font-outfit">Co-Founder</p>
+              </div>
+            </div>
+            <p class="font-outfit text-[14px] leading-[20px] text-[#6E6B70] mt-5">
+              Lorem Ipsum We A Dolor Sit Amet, Consectetur Adipiscing Elit. Then In Molestie Vestibulum Cleo, Lorem
+              Ipsum
+              Has Been The Industry's Vitae.
+            </p>
+          </div>
+          <!-- Slide 3 -->
+          <div class="swiper-slide bg-cover bg-no-repeat p-5"
+            style="background-image: url('assets/image/Rectangle\ 8.png');">
+            <div class="flex items-center">
+              <img src="assets/image/testimonials/Group 1116601214 (2).png" alt="Sarah Albert" class="w-16 h-16 rounded-full">
+              <div class="pl-4">
+                <h3 class="text-[18px] font-cormorantgaramond text-white font-medium">SARAH ALBERT</h3>
+                <p class="text-[#6E6B70] text-[14px] font-outfit">Co-Founder</p>
+              </div>
+            </div>
+            <p class="font-outfit text-[14px] leading-[20px] text-[#6E6B70] mt-5">
+              Lorem Ipsum We A Dolor Sit Amet, Consectetur Adipiscing Elit. Then In Molestie Vestibulum Cleo, Lorem
+              Ipsum
+              Has Been The Industry's Vitae.
+            </p>
+          </div>
+        </div>
+        <!-- Pagination -->
+        <div class="swiper-pagination mt-4"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Our Benefits Start -->
+<div class="bg-bgprimery py-10">
+  <div class="bg-bgsecendary w-full lg:w-[88%] pb-16 lg:pb-32 mx-auto">
+    <!-- Heading Background -->
+    <h1 class="hidden lg:block text-gold pl-2 opacity-[12%] text-[128px] font-normal font-alexbrush">Our Benefits</h1>
+
+    <!-- Content Container -->
+    <div class="max-w-[1440px] mx-auto flex flex-col lg:flex-row items-center lg:items-start relative px-4 lg:px-0">
+      <!-- Left Content -->
+      <div class="w-full lg:w-1/2 text-white lg:pr-5">
+        <h4 class="text-gold text-[24px] lg:text-[36px] font-semibold font-cormorantgaramond">Our Benefits</h4>
+        <h2 class="text-[32px] lg:text-[48px] font-playfair font-bold mt-4">Why Choose Us?</h2>
+        <p class="text-gold text-[18px] lg:text-[20px] font-outfit mt-4">Book And Enjoy Our Special Treatments</p>
+        <p class="text-[16px] lg:text-[20px] text-white leading-7 capitalize font-outfit mt-2">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. In molestie vestibulum leo, Lorem Ipsum has been
+          the industry's vitae pharetra justo sollicitudin vitae.
+        </p>
+
+        <!-- Benefits List -->
+        <div class="mt-6 space-y-6">
+          <!-- Benefit 1 -->
+          <div class="flex items-start lg:items-center w-full">
+            <div class="flex items-center w-1/3 lg:w-1/3 border-r border-[#313031]">
+              <div>
+                <img src="assets/image/Frame (10).png" alt="" class="w-12 lg:w-auto">
+              </div>
+              <div class="pl-4">
+                <h4 class="font-playfair text-[16px] lg:text-[20px] leading-[20px] lg:leading-[26px] font-bold">
+                  EXPERT <br> STAFF
+                </h4>
+              </div>
+            </div>
+            <div class="w-2/3 lg:w-3/4 pl-4 lg:pl-7">
+              <p class="text-[14px] lg:text-[20px] text-[#6E6B70]">
+                There are many variations of passages of Lorem Ipsum available, alteration in some form.
+              </p>
+            </div>
+          </div>
+          <!-- Benefit 2 -->
+          <div class="flex items-start lg:items-center w-full">
+            <div class="flex items-center w-1/3 lg:w-1/3 border-r border-[#313031]">
+              <div>
+                <div class="bg-gold w-10 h-10 lg:w-12 lg:h-12 flex items-center justify-center rounded-full">
+                  <img src="assets/image/Frame (10).png" alt="" class="w-full">
+                </div>
+              </div>
+              <div class="pl-4">
+                <h4 class="font-playfair text-[16px] lg:text-[20px] leading-[20px] lg:leading-[26px] font-bold">
+                  BRILLIANT <br> SERVICES
+                </h4>
+              </div>
+            </div>
+            <div class="w-2/3 lg:w-3/4 pl-4 lg:pl-7">
+              <p class="text-[14px] lg:text-[20px] text-[#6E6B70]">
+                There Are Many Variations Of Passages Of Lorem Ipsum Available, Alteration In Some Form.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right Image -->
+      <div class="w-full lg:w-1/2 mt-10 lg:mt-0 flex justify-center lg:justify-end">
+        <img src="assets/image/Rectangle 26.png" alt="Why Choose Us" class="w-full max-w-[300px] lg:max-w-none lg:absolute lg:top-[-117px] lg:right-[-346px]">
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Our Benefits End -->
+
+
 
 
 
