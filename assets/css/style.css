@@ -9,3 +9,27 @@
 ::-webkit-scrollbar{
     display: none;
 }
+
+.swiper {
+    width: 100%;
+    height: 100%;
+  }
+
+  .swiper-slide {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .swiper-pagination-bullet {
+    background-color: #6E6B70; 
+  }
+  .swiper-pagination-bullet-active {
+    background-color: #C2A74E; /* Active bullet color */
+  }
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
