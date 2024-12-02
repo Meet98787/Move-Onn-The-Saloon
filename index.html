@@ -656,7 +656,7 @@
         </div>
 
         <!-- Articles Grid -->
-        <div class="md:w-[1440px] mx-auto md:grid grid-cols-1 md:grid-cols-3 gap-8 ">
+        <div class="md:w-[1440px] mx-auto md:grid grid-cols-1 md:grid-cols-3 gap-8 hidden">
           <!-- Article 1 -->
           <div class="relative  rounded-lg shadow-lg group ">
             <!-- Image -->
@@ -665,7 +665,7 @@
                 class="w-full object-cover relative z-10 group-hover:scale-105 transition-transform duration-300">
             </div>
             <!-- Date Badge -->
-            <div class="absolute top-[240px] left-[22px] z-30 bg-gold text-[20px] text-white py-2 px-4 text-center">
+            <div class="absolute top-[240px] left-[22px] z-30 bg-gold text-[18px] md:text-[20px] text-white py-2 px-4 text-center">
               <span class="block">31</span>
               <span>Aug</span>
             </div>
@@ -695,10 +695,10 @@
 
                   &nbsp; 3 Comments</span>
               </div>
-              <h3 class="text-white  font-playfair text-[24px] group-hover:text-gold transition-colors duration-300">
+              <h3 class="text-white  font-playfair text-[18px] md:text-[24px] group-hover:text-gold transition-colors duration-300">
                 The Evolution Of Men's Grooming Embracing Modern Trends
               </h3>
-              <p class="text-[#6E6B70] text-[20px] mt-2 capitalize border-b-2 border-[#6E6B70] pb-5">Lorem
+              <p class="text-[#6E6B70] text-[14px] md:text-[20px] mt-2 capitalize border-b-2 border-[#6E6B70] pb-5">Lorem
                 ipsum we a dolor sit we an amet, consectetur adipiscing elit. will then In molestie
                 vestibulum cleo,a Lorem Ipsum has been the industry'svitae </p>
               <a href="/blogdetail.html" class="text-gold text-[20px] font-semibold mt-4 block">Read More</a>
@@ -801,6 +801,138 @@
             </div>
           </div>
         </div>
+
+        <!-- artical slider start -->
+
+
+        <div class="swiper articlesSwiper bg-bgprimery md:hidden">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <div class="relative rounded-lg shadow-lg group">
+                  <!-- Image -->
+                  <div class="overflow-hidden">
+                    <img src="assets/image/Rectangle 27 (6).png" alt="Blog 1"
+                      class="w-full object-cover relative z-10 ">
+                  </div>
+                  <!-- Date Badge -->
+                  <div class="absolute top-[140px] left-[10px] z-30 bg-gold text-[18px] md:text-[20px] text-white py-2 px-4 text-center">
+                    <span class="block">31</span>
+                    <span>Aug</span>
+                  </div>
+                  <!-- Content -->
+                  <div class="p-5 bg-bgsecendary m-[-50px] w-[95%] mx-auto relative z-20">
+                    <div class="flex items-center text-[#6E6B70] text-[14px] space-x-4 mb-4">
+                      <span class="flex font-outfit items-center">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M11.9984 4.42761C9.69041 4.42761 7.8125 6.30538 7.8125 8.61355C7.8125 10.9217 9.69041 12.7994 11.9984 12.7994C14.3065 12.7994 16.1844 10.9216 16.1844 8.6136C16.1844 6.30538 14.3065 4.42761 11.9984 4.42761Z" fill="#464447" />
+                          <path d="M12 0C5.38312 0 0 5.38312 0 12C0 15.0615 1.15303 17.8583 3.04669 19.9807C3.45225 18.1998 4.383 16.5749 5.742 15.3091C6.69581 14.4207 7.81181 13.7558 9.01809 13.3424C7.45073 12.3505 6.40777 10.6016 6.40777 8.61361C6.40777 5.52998 8.91652 3.02142 12 3.02142C15.0835 3.02142 17.592 5.52998 17.592 8.61361C17.592 10.6007 16.55 12.349 14.9837 13.341C16.2903 13.7886 17.488 14.5316 18.4935 15.537C19.7219 16.7655 20.5701 18.3096 20.9524 19.9814C22.8468 17.859 24 15.0619 24 12C24 5.38312 18.6169 0 12 0Z" fill="#464447" />
+                          <path d="M4.26953 21.171C6.35912 22.935 9.05678 24 11.9991 24C14.9415 24 17.6391 22.9348 19.7287 21.171C19.5363 19.4227 18.7506 17.7837 17.4983 16.5315C16.0291 15.0622 14.0761 14.2531 11.9991 14.2531C8.04334 14.2531 4.69891 17.2709 4.26953 21.171Z" fill="#464447" />
+                        </svg>
+                        &nbsp; By Salon
+                      </span>
+                      <span class="flex items-center">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M12 0.599976C5.3832 0.599976 0 5.44478 0 11.4C0 13.4816 0.6584 15.498 1.9072 17.2416C1.6708 19.8564 1.0372 21.7976 0.1172 22.7172C0.0579665 22.7765 0.0188642 22.8529 0.00541619 22.9357C-0.00803186 23.0184 0.00485396 23.1033 0.0422536 23.1783C0.0796533 23.2533 0.139677 23.3147 0.213846 23.3537C0.288015 23.3928 0.372581 23.4076 0.4556 23.396C0.6176 23.3732 4.3808 22.8316 7.1028 21.2604C8.6484 21.884 10.2948 22.2 12 22.2C18.6168 22.2 24 17.3552 24 11.4C24 5.44478 18.6168 0.599976 12 0.599976ZM6.4 13C5.5176 13 4.8 12.2824 4.8 11.4C4.8 10.5176 5.5176 9.79998 6.4 9.79998C7.2824 9.79998 8 10.5176 8 11.4C8 12.2824 7.2824 13 6.4 13ZM12 13C11.1176 13 10.4 12.2824 10.4 11.4C10.4 10.5176 11.1176 9.79998 12 9.79998C12.8824 9.79998 13.6 10.5176 13.6 11.4C13.6 12.2824 12.8824 13 12 13ZM17.6 13C16.7176 13 16 12.2824 16 11.4C16 10.5176 16.7176 9.79998 17.6 9.79998C18.4824 9.79998 19.2 10.5176 19.2 11.4C19.2 12.2824 18.4824 13 17.6 13Z" fill="#464447" />
+                        </svg>
+                        &nbsp; 3 Comments
+                      </span>
+                    </div>
+                    <h3 class="text-white font-playfair text-[18px] md:text-[24px] group-hover:text-gold transition-colors duration-300">
+                      The Evolution Of Men's Grooming Embracing Modern Trends
+                    </h3>
+                    <p class="text-[#6E6B70] text-[14px] md:text-[20px] mt-2 capitalize border-b-2 border-[#6E6B70] pb-5">
+                      Lorem ipsum we a dolor sit amet, consectetur adipiscing elit. Lorem Ipsum has been the industry's vitae.
+                    </p>
+                    <a href="/blogdetail.html" class="text-gold text-[20px] font-semibold mt-4 block">Read More</a>
+                  </div>
+                </div>
+
+            </div>
+            <div class="swiper-slide">
+              <div class="relative rounded-lg shadow-lg group">
+                <!-- Image -->
+                <div class="overflow-hidden">
+                  <img src="assets/image/blog/page/Group 1116601259 (1).png" alt="Blog 2"
+                    class="w-full object-cover relative z-10 group-hover:scale-105 transition-transform duration-300">
+                </div>
+                <!-- Date Badge -->
+                <div class="absolute top-[140px] left-[10px] z-30 bg-gold text-[18px] md:text-[20px] text-white py-2 px-4 text-center">
+                  <span class="block">31</span>
+                  <span>Aug</span>
+                </div>
+                <!-- Content -->
+                <div class="p-5 bg-bgsecendary m-[-50px] w-[90%] mx-auto relative z-20 border-4 border-gold">
+                  <div class="flex items-center text-[#6E6B70] text-[14px] space-x-4 mb-4">
+                    <span class="flex font-outfit items-center">
+                      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M11.9984 4.42761C9.69041 4.42761 7.8125 6.30538 7.8125 8.61355C7.8125 10.9217 9.69041 12.7994 11.9984 12.7994C14.3065 12.7994 16.1844 10.9216 16.1844 8.6136C16.1844 6.30538 14.3065 4.42761 11.9984 4.42761Z" fill="#464447" />
+                        <path d="M12 0C5.38312 0 0 5.38312 0 12C0 15.0615 1.15303 17.8583 3.04669 19.9807C3.45225 18.1998 4.383 16.5749 5.742 15.3091C6.69581 14.4207 7.81181 13.7558 9.01809 13.3424C7.45073 12.3505 6.40777 10.6016 6.40777 8.61361C6.40777 5.52998 8.91652 3.02142 12 3.02142C15.0835 3.02142 17.592 5.52998 17.592 8.61361C17.592 10.6007 16.55 12.349 14.9837 13.341C16.2903 13.7886 17.488 14.5316 18.4935 15.537C19.7219 16.7655 20.5701 18.3096 20.9524 19.9814C22.8468 17.859 24 15.0619 24 12C24 5.38312 18.6169 0 12 0Z" fill="#464447" />
+                        <path d="M4.26953 21.171C6.35912 22.935 9.05678 24 11.9991 24C14.9415 24 17.6391 22.9348 19.7287 21.171C19.5363 19.4227 18.7506 17.7837 17.4983 16.5315C16.0291 15.0622 14.0761 14.2531 11.9991 14.2531C8.04334 14.2531 4.69891 17.2709 4.26953 21.171Z" fill="#464447" />
+                      </svg>
+                      &nbsp; By Salon
+                    </span>
+                    <span class="flex items-center">
+                      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12 0.599976C5.3832 0.599976 0 5.44478 0 11.4C0 13.4816 0.6584 15.498 1.9072 17.2416C1.6708 19.8564 1.0372 21.7976 0.1172 22.7172C0.0579665 22.7765 0.0188642 22.8529 0.00541619 22.9357C-0.00803186 23.0184 0.00485396 23.1033 0.0422536 23.1783C0.0796533 23.2533 0.139677 23.3147 0.213846 23.3537C0.288015 23.3928 0.372581 23.4076 0.4556 23.396C0.6176 23.3732 4.3808 22.8316 7.1028 21.2604C8.6484 21.884 10.2948 22.2 12 22.2C18.6168 22.2 24 17.3552 24 11.4C24 5.44478 18.6168 0.599976 12 0.599976ZM6.4 13C5.5176 13 4.8 12.2824 4.8 11.4C4.8 10.5176 5.5176 9.79998 6.4 9.79998C7.2824 9.79998 8 10.5176 8 11.4C8 12.2824 7.2824 13 6.4 13ZM12 13C11.1176 13 10.4 12.2824 10.4 11.4C10.4 10.5176 11.1176 9.79998 12 9.79998C12.8824 9.79998 13.6 10.5176 13.6 11.4C13.6 12.2824 12.8824 13 12 13ZM17.6 13C16.7176 13 16 12.2824 16 11.4C16 10.5176 16.7176 9.79998 17.6 9.79998C18.4824 9.79998 19.2 10.5176 19.2 11.4C19.2 12.2824 18.4824 13 17.6 13Z" fill="#464447" />
+                      </svg>
+                      &nbsp; 3 Comments
+                    </span>
+                  </div>
+                  <h3 class="text-white font-playfair text-[18px] md:text-[24px] group-hover:text-gold transition-colors duration-300">
+                    Maintaining Healthy Hair Essential Care Tips For Men
+                  </h3>
+                  <p class="text-[#6E6B70] text-[14px] md:text-[20px] mt-2 capitalize border-b-2 border-[#6E6B70] pb-5">
+                    Lorem ipsum we a dolor sit amet, consectetur adipiscing elit. Lorem Ipsum has been the industry's vitae.
+                  </p>
+                  <a href="#" class="text-gold text-[20px] font-semibold mt-4 block">Read More</a>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="relative rounded-lg shadow-lg group">
+                <!-- Image -->
+                <div class="overflow-hidden">
+                  <img src="assets/image/blog/page/Group 1116601259 (2).png" alt="Blog 3"
+                    class="w-full object-cover relative z-10 group-hover:scale-105 transition-transform duration-300">
+                </div>
+                <!-- Date Badge -->
+                <div class="absolute top-[140px] left-[10px] z-30 bg-gold text-[18px] md:text-[20px] text-white py-2 px-4 text-center">
+                  <span class="block">31</span>
+                  <span>Aug</span>
+                </div>
+                <!-- Content -->
+                <div class="p-5 bg-bgsecendary m-[-50px] w-[90%] mx-auto relative z-20 border-4 border-gold">
+                  <div class="flex items-center text-[#6E6B70] text-[14px] space-x-4 mb-4">
+                    <span class="flex font-outfit items-center">
+                      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M11.9984 4.42761C9.69041 4.42761 7.8125 6.30538 7.8125 8.61355C7.8125 10.9217 9.69041 12.7994 11.9984 12.7994C14.3065 12.7994 16.1844 10.9216 16.1844 8.6136C16.1844 6.30538 14.3065 4.42761 11.9984 4.42761Z" fill="#464447" />
+                        <path d="M12 0C5.38312 0 0 5.38312 0 12C0 15.0615 1.15303 17.8583 3.04669 19.9807C3.45225 18.1998 4.383 16.5749 5.742 15.3091C6.69581 14.4207 7.81181 13.7558 9.01809 13.3424C7.45073 12.3505 6.40777 10.6016 6.40777 8.61361C6.40777 5.52998 8.91652 3.02142 12 3.02142C15.0835 3.02142 17.592 5.52998 17.592 8.61361C17.592 10.6007 16.55 12.349 14.9837 13.341C16.2903 13.7886 17.488 14.5316 18.4935 15.537C19.7219 16.7655 20.5701 18.3096 20.9524 19.9814C22.8468 17.859 24 15.0619 24 12C24 5.38312 18.6169 0 12 0Z" fill="#464447" />
+                        <path d="M4.26953 21.171C6.35912 22.935 9.05678 24 11.9991 24C14.9415 24 17.6391 22.9348 19.7287 21.171C19.5363 19.4227 18.7506 17.7837 17.4983 16.5315C16.0291 15.0622 14.0761 14.2531 11.9991 14.2531C8.04334 14.2531 4.69891 17.2709 4.26953 21.171Z" fill="#464447" />
+                      </svg>
+                      &nbsp; By Salon
+                    </span>
+                    <span class="flex items-center">
+                      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12 0.599976C5.3832 0.599976 0 5.44478 0 11.4C0 13.4816 0.6584 15.498 1.9072 17.2416C1.6708 19.8564 1.0372 21.7976 0.1172 22.7172C0.0579665 22.7765 0.0188642 22.8529 0.00541619 22.9357C-0.00803186 23.0184 0.00485396 23.1033 0.0422536 23.1783C0.0796533 23.2533 0.139677 23.3147 0.213846 23.3537C0.288015 23.3928 0.372581 23.4076 0.4556 23.396C0.6176 23.3732 4.3808 22.8316 7.1028 21.2604C8.6484 21.884 10.2948 22.2 12 22.2C18.6168 22.2 24 17.3552 24 11.4C24 5.44478 18.6168 0.599976 12 0.599976ZM6.4 13C5.5176 13 4.8 12.2824 4.8 11.4C4.8 10.5176 5.5176 9.79998 6.4 9.79998C7.2824 9.79998 8 10.5176 8 11.4C8 12.2824 7.2824 13 6.4 13ZM12 13C11.1176 13 10.4 12.2824 10.4 11.4C10.4 10.5176 11.1176 9.79998 12 9.79998C12.8824 9.79998 13.6 10.5176 13.6 11.4C13.6 12.2824 12.8824 13 12 13ZM17.6 13C16.7176 13 16 12.2824 16 11.4C16 10.5176 16.7176 9.79998 17.6 9.79998C18.4824 9.79998 19.2 10.5176 19.2 11.4C19.2 12.2824 18.4824 13 17.6 13Z" fill="#464447" />
+                      </svg>
+                      &nbsp; 3 Comments
+                    </span>
+                  </div>
+                  <h3 class="text-white font-playfair text-[18px] md:text-[24px] group-hover:text-gold transition-colors duration-300">
+                    The Role Of Barbershops In Community And Culture
+                  </h3>
+                  <p class="text-[#6E6B70] text-[14px] md:text-[20px] mt-2 capitalize border-b-2 border-[#6E6B70] pb-5">
+                    Lorem ipsum we a dolor sit amet, consectetur adipiscing elit. Lorem Ipsum has been the industry's vitae.
+                  </p>
+                  <a href="#" class="text-gold text-[20px] font-semibold mt-4 block">Read More</a>
+                </div>
+              </div>
+            </div>
+
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+        <!-- slider end -->
       </div>
     </div>
 
@@ -809,12 +941,12 @@
     <div class="bg-bgsecendary py-16">
       <div class="max-w-[1440px] mx-auto text-center">
         <!-- Title Section -->
-        <h4 class="text-gold text-[36px]  ont-semibold font-cormorantgaramond leading-5">Our Insta Moments</h4>
-        <h2 class="text-white text-[48px] font-bold font-playfair mt-4 leading-[63px]">Follow On Instagram</h2>
+        <h4 class="text-gold text-[18px] md:text-[36px]  ont-semibold font-cormorantgaramond leading-5">Our Insta Moments</h4>
+        <h2 class="text-white md:text-[48px] text-[24px] font-bold font-playfair mt-4 leading-[63px]">Follow On Instagram</h2>
         <img src="assets/image/gallery/image 12.png" alt="Decorative Line" class="mx-auto mt-4">
 
         <!-- Image Grid -->
-        <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-6 gap-5  px-4 mt-10">
+        <div class="md:grid hidden md:grid-cols-3 lg:grid-cols-6 gap-5  px-4 mt-10">
           <div class="overflow-hidden">
             <img src="assets/image/instagram/Rectangle 31.png" alt="Instagram Moment 1"
               class="w-full h-auto object-cover transition-transform duration-300 hover:scale-105" />
@@ -840,6 +972,41 @@
               class="w-full h-auto object-cover transition-transform duration-300 hover:scale-105" />
           </div>
         </div>
+
+        <div class="swiper instagramSwiper mt-10 md:hidden">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide grid grid-cols-2 gap-5 px-4">
+              <div class="overflow-hidden">
+                <img src="assets/image/instagram/Rectangle 31.png" alt="Instagram Moment 1"
+                  class="w-full h-auto object-cover transition-transform duration-300 hover:scale-105" />
+              </div>
+              <div class="overflow-hidden">
+                <img src="assets/image/instagram/Rectangle 32.png" alt="Instagram Moment 2"
+                  class="w-full h-auto object-cover transition-transform duration-300 hover:scale-105" />
+              </div>
+            </div>
+            <div class="swiper-slide grid grid-cols-2 gap-5 px-4">
+              <div class="overflow-hidden">
+                <img src="assets/image/instagram/Rectangle 33.png" alt="Instagram Moment 3"
+                  class="w-full h-auto object-cover transition-transform duration-300 hover:scale-105" />
+              </div>
+              <div class="overflow-hidden">
+                <img src="assets/image/instagram/Rectangle 34.png" alt="Instagram Moment 4"
+                  class="w-full h-auto object-cover transition-transform duration-300 hover:scale-105" />
+              </div>
+            </div>
+            <div class="swiper-slide grid grid-cols-2 gap-5 px-4">
+              <div class="overflow-hidden">
+                <img src="assets/image/instagram/Rectangle 35.png" alt="Instagram Moment 5"
+                  class="w-full h-auto object-cover transition-transform duration-300 hover:scale-105" />
+              </div>
+              <div class="overflow-hidden">
+                <img src="assets/image/instagram/Rectangle 36.png" alt="Instagram Moment 6"
+                  class="w-full h-auto object-cover transition-transform duration-300 hover:scale-105" />
+              </div>
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
       </div>
     </div>
 
@@ -847,12 +1014,12 @@
     <!-- Instagram end -->
 
     <!-- Book Appointment start -->
-    <div class="relative bg-cover bg-center bg-no-repeat py-24"
+    <div class="relative bg-cover bg-center bg-no-repeat py-5 md:py-24"
       style="background-image: url('assets/image/Group\ 1116601915.png');">
       <div class="max-w-[1440px] mx-auto px-4 text-white">
         <!-- Heading -->
         <div class="w-full md:w-1/2">
-          <h2 class="text-[48px] font-bold font-playfair mb-8">Book Appointment</h2>
+          <h2 class="md:text-[48px] text-[24px] font-bold font-playfair mb-5 text-center md:text-left">Book Appointment</h2>
 
           <!-- Form -->
           <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -924,14 +1091,14 @@
     <!-- Book Appointment end -->
     <!-- footer start -->
     <footer class="bg-bgsecendary text-white ">
-      <div class=" border-b border-[#5F5F5F]  py-14">
-        <div class="max-w-[1440px] mx-auto px-4">
-          <div class="flex w-full justify-between">
+      <div class=" border-b border-[#5F5F5F] py-5 md:py-14">
+        <div class="md:max-w-[1440px] mx-auto px-4">
+          <div class="md:flex md:w-full md:justify-between grid grid-cols-2">
             <!-- Left Column -->
-            <div class="w-[28%]">
-              <h2 class="text-[52px] font-cormorantgaramond leading-none font-bold">Move Onn</h2>
-              <h3 class="text-[29px] font-cormorantgaramond text-gold font-semibold pt-[-5px]">The Salon</h3>
-              <p class="text-[20px] mt-4 leading-6 font-light font-outfit">
+            <div class="md:w-[28%] col-span-2 p-2">
+              <h2 class="md:text-[52px] text-[33.50px] font-cormorantgaramond leading-none font-bold">Move Onn</h2>
+              <h3 class="md:text-[29px] text-[19px] font-cormorantgaramond text-gold font-semibold pt-[-5px]">The Salon</h3>
+              <p class="md:text-[20px] text-[14px]  leading-6 font-light font-outfit">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean commodo
                 congue purus in pretium.
               </p>
@@ -974,8 +1141,8 @@
             </div>
 
             <!-- Quick Link -->
-            <div class="w-[10%]">
-              <h4 class="font-playfair text-[22px] text-gold mb-4">Quick Link</h4>
+            <div class="md:w-[10%] grid-cols-1 py-5">
+              <h4 class="font-playfair text-[20px] md:text-[22px] text-gold mb-4">Quick Link</h4>
               <ul class="space-y-2">
                 <li><a href="#" class="hover:underline font-outfit text-[18px] font-normal my-7">Home</a></li>
                 <li><a href="#" class="hover:underline font-outfit text-[18px] font-normal my-7">About Us</a></li>
@@ -987,8 +1154,8 @@
             </div>
 
             <!-- Business Hours -->
-            <div class="w-[15%]">
-              <h4 class="text-[22px] font-medium font-playfair text-gold mb-4">Business Hours</h4>
+            <div class="md:w-[15%] grid-cols-1 py-5">
+              <h4 class="text-[20px] md:text-[22px] font-medium font-playfair text-gold mb-4">Business Hours</h4>
               <ul class="space-y-2">
                 <li class="font-outfit text-[18px] font-light border-b-2 border-dotted border-white pb-3 ">
                   <span>Mon:</span>
@@ -1006,8 +1173,8 @@
             </div>
 
             <!-- Information -->
-            <div class="w-[28%]">
-              <h4 class=" font-playfair text-[22px] font-normal *: text-gold mb-4">Information</h4>
+            <div class="md:w-[28%] col-span-2 py-5">
+              <h4 class=" font-playfair text-[20px] md:text-[22px] font-normal *: text-gold mb-4">Information</h4>
               <ul class="space-y-4">
                 <li class="flex items-start space-x-3">
                   <span class="bg-gold rounded-full p-2">
@@ -1020,7 +1187,7 @@
 
 
                   </span>
-                  <p class="font-outfit text-[18px] leading-6">G-1-B, SNS SparkleCity, Light Road next to Shah Virchand
+                  <p class="font-outfit text-[14px] md:text-[18px] leading-6">G-1-B, SNS SparkleCity, Light Road next to Shah Virchand
                     Govanji Jewellers City
                     Light Town, AthwaSurat, Gujarat 395007 India</p>
                 </li>
@@ -1036,7 +1203,7 @@
                     </svg>
 
                   </span>
-                  <p class="font-outfit text-[18px] leading-6">090999 01717</p>
+                  <p class="font-outfit text-[14px] md:text-[18px] leading-6">090999 01717</p>
                 </li>
                 <li class="flex items-center space-x-3">
                   <span class="bg-gold rounded-full p-2">
@@ -1050,7 +1217,7 @@
                     </svg>
 
                   </span>
-                  <p class="font-outfit text-[22px] leading-6">Moveonnthesalon@gmail.com</p>
+                  <p class="font-outfit text-[14px]  md:text-[22px] leading-6">Moveonnthesalon@gmail.com</p>
                 </li>
               </ul>
             </div>
@@ -1058,7 +1225,7 @@
         </div>
       </div>
       <!-- Footer Bottom -->
-      <div class="text-center font-outfit text-[14px] font-light text-sm py-5">
+      <div class="text-center font-outfit text-[14px] font-light text-sm p-5 md:py-5">
         © Copyright 2023 | Move Onn - The Salon Clinic & Academy | All rights reserved.
       </div>
     </footer>
@@ -1074,19 +1241,19 @@
           background-position: center;
         ">
     <div class="absolute -z-10 inset-0 bg-black bg-opacity-75" style="backdrop-filter: blur(10px);"></div>
-    <div class="flex flex-col justify-between h-screen px-10 py-16 w-[1440px] mx-auto z-10">
+    <div class="flex flex-col md:justify-between h-screen px-10 md:py-16 md:w-[1440px] mx-auto z-10">
 
       <div class="flex justify-between items-center">
-        <div>
-          <h2 class="text-white font-cormorantgaramond font-bold text-[58.71px] leading-none">
+        <div class="mt-3">
+          <h2 class="text-white font-cormorantgaramond font-bold text-[31px] md:text-[58.71px] leading-none">
             Move Onn
           </h2>
-          <h5 class="text-gold text-[29.36px] font-cormorantgaramond font-semibold leading-none">
+          <h5 class="text-gold text-[15px] md:text-[29.36px] font-cormorantgaramond font-semibold leading-none">
             The Salon
           </h5>
         </div>
         <div>
-          <svg width="37" height="36" viewBox="0 0 37 36" onclick="toggleSidebar()" fill="none"
+          <svg width="37" height="36" viewBox="0 0 37 36" class="md:block hidden" onclick="toggleSidebar()" fill="none"
             xmlns="http://www.w3.org/2000/svg">
             <g clip-path="url(#clip0_68_1327)">
               <path
@@ -1099,20 +1266,33 @@
               </clipPath>
             </defs>
           </svg>
+          <svg width="32" height="32" viewBox="0 0 37 36" class="md:hidden" onclick="toggleSidebar()" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <g clip-path="url(#clip0_68_1327)">
+              <path
+                d="M22.2887 18.0297L36.3107 4.01159C37.2232 3.09975 37.2232 1.62539 36.3107 0.713664C35.3986 -0.198174 33.9238 -0.198174 33.0118 0.713664L18.9895 14.7317L4.96767 0.713664C4.05513 -0.198174 2.58089 -0.198174 1.66878 0.713664C0.756239 1.6255 0.756239 3.09975 1.66878 4.01159L15.6905 18.0297L1.66889 32.0478C0.756349 32.9596 0.756349 34.434 1.66889 35.3457C1.88525 35.5626 2.14234 35.7346 2.42541 35.8519C2.70847 35.9692 3.01193 36.0294 3.31834 36.029C3.91547 36.029 4.51282 35.8005 4.96778 35.3457L18.9895 21.3277L33.0118 35.3457C33.2282 35.5626 33.4853 35.7346 33.7684 35.8518C34.0514 35.9691 34.3549 36.0293 34.6613 36.029C35.2584 36.029 35.8558 35.8005 36.3107 35.3457C37.2232 34.4339 37.2232 32.9596 36.3107 32.0478L22.2887 18.0297Z"
+                fill="#FEFEFE" />
+            </g>
+            <defs>
+              <clipPath id="clip0_68_1327">
+                <rect width="32.0106" height="32" fill="white" transform="translate(0.984375)" />
+              </clipPath>
+            </defs>
+          </svg>
         </div>
       </div>
 
-      <div class="flex justify-between items-center">
-        <nav class="space-y-6 w-1/4">
-          <a href="/index.html" class="text-[48px] font-medium font-playfair block text-gold hover:underline">Home</a>
-          <a href="/aboutus.html" class="text-[48px] font-medium font-playfair block hover:underline">About Us</a>
-          <a href="/services.html" class="text-[48px] font-medium font-playfair block hover:underline">Services</a>
-          <a href="/gallery.html" class="text-[48px] font-medium font-playfair block hover:underline">Gallery</a>
-          <a href="/blog.html" class="text-[48px] font-medium font-playfair block hover:underline">Blog</a>
-          <a href="/contectus.html" class="text-[48px] font-medium font-playfair block hover:underline">Contact Us</a>
+      <div class="md:flex md:justify-between md:items-center">
+        <nav class="space-y-6 md:w-1/4 w-full text-center md:text-left">
+          <a href="/index.html" class="md:text-[48px] text-[24px] font-medium font-playfair block text-gold hover:underline">Home</a>
+          <a href="/aboutus.html" class="md:text-[48px] text-[24px] font-medium font-playfair block hover:underline">About Us</a>
+          <a href="/services.html" class="md:text-[48px] text-[24px] font-medium font-playfair block hover:underline">Services</a>
+          <a href="/gallery.html" class="md:text-[48px] text-[24px] font-medium font-playfair block hover:underline">Gallery</a>
+          <a href="/blog.html" class="md:text-[48px] text-[24px] font-medium font-playfair block hover:underline">Blog</a>
+          <a href="/contectus.html" class="md:text-[48px] text-[24px] font-medium font-playfair block hover:underline">Contact Us</a>
         </nav>
 
-        <div class="space-y-4 w-1/2 p-8">
+        <div class="space-y-4 w-1/2 p-8 hidden md:block">
 
           <div class="flex items-start space-x-4 py-6">
             <div class="flex items-center justify-center  bg-gold p-3 rounded-full ">
@@ -1180,17 +1360,10 @@
 </body>
 <script>
   function toggleSidebar() {
+    console.log("ok")
     const sidebar = document.getElementById("sidebar");
     sidebar.classList.toggle("-translate-x-full");
   }
-
-</script>
-<script>
-  function toggleSidebar() {
-    const sidebar = document.getElementById("sidebar");
-    sidebar.classList.toggle("-translate-x-full");
-  }
-
 </script>
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
@@ -1199,6 +1372,33 @@
   var swiper = new Swiper(".mySwiper", {
     pagination: {
       el: ".swiper-pagination",
+    },
+  });
+</script>
+
+<script>
+  // Initialize the Article Slider
+  const articlesSwiper = new Swiper('.articlesSwiper', {
+    loop: true, // Enables looping through slides
+    pagination: {
+      el: '.swiper-pagination', // Adds pagination
+      clickable: true, // Makes pagination bullets clickable
+    },
+    autoplay: {
+      delay: 4000, // Sets autoplay delay to 4 seconds
+      disableOnInteraction: false, // Keeps autoplay active even after interaction
+    },
+    speed: 800, // Adjusts the transition speed between slides
+  });
+</script>
+
+<script>
+  const instagramSwiper = new Swiper('.instagramSwiper', {
+    slidesPerView: 1, // Display one set of two divs per slide
+    spaceBetween: 20, // Spacing between slides
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true, // Pagination is clickable
     },
   });
 </script>
