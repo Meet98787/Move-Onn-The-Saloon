@@ -32,3 +32,9 @@
     height: 100%;
     object-fit: cover;
   }
+
+  @media(min-width:576px){
+      .bootcamp{
+        background-position-x:38%;
+      }
+  }
