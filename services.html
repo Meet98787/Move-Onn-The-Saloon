@@ -45,6 +45,8 @@
 
 
     <!-- css -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
     <script src="https://cdn.tailwindcss.com"></script>
 
     <script>
@@ -98,32 +100,29 @@
             background-position-x: 38%;
           ">
             <!-- header start -->
-            <header class="md:max-w-[1440px] w-full mx-auto pt-7 px-4">
+            <header class="max-w-[1440px] mx-auto pt-7 px-4">
                 <nav>
-                    <div class="flex justify-between items-center">
-                        <div>
-                            <h2
-                                class="text-white font-cormorantgaramond font-bold text-3xl md:text-[58.71px] leading-none">
-                                Move Onn
-                            </h2>
-                            <h5
-                                class="text-gold text-lg md:text-[29.36px] font-cormorantgaramond font-semibold leading-none">
-                                The Salon
-                            </h5>
-                        </div>
-                        <!-- SVG Button -->
-                        <div>
-                            <svg onclick="toggleSidebar()" viewBox="0 0 46 46" fill="none"
-                                xmlns="http://www.w3.org/2000/svg"
-                                class="cursor-pointer w-[18px] h-[18px] md:w-[46px] md:h-[46px]">
-                                <path
-                                    d="M11.5 9.1999C11.5 7.92969 12.5298 6.8999 13.8 6.8999H43.7C44.9702 6.8999 46 7.92969 46 9.1999C46 10.4701 44.9702 11.4999 43.7 11.4999H13.8C12.5298 11.4999 11.5 10.47 11.5 9.1999ZM43.7 20.6999H2.3C1.02979 20.6999 0 21.7298 0 22.9999C0 24.2701 1.02979 25.2999 2.3 25.2999H43.7C44.9702 25.2999 46 24.2701 46 22.9999C46 21.7298 44.9702 20.6999 43.7 20.6999ZM43.7 34.4999H23C21.7299 34.4999 20.7 35.5297 20.7 36.7999C20.7 38.07 21.7299 39.0999 23 39.0999H43.7C44.9702 39.0999 46 38.07 46 36.7999C46 35.5297 44.9702 34.4999 43.7 34.4999Z"
-                                    fill="#C2A74E" />
-                            </svg>
-                        </div>
+                  <div class="flex justify-between items-center">
+                    <div>
+                      <h2 class="text-white font-cormorantgaramond font-bold text-[20px] md:text-[38px] lg:text-[58.71px] leading-none">
+                        Move Onn
+                      </h2>
+                      <h5 class="text-gold text-[10px] md:text-[20px] lg:text-[29.36px] font-cormorantgaramond font-semibold leading-none">
+                        The Salon
+                      </h5>
                     </div>
+                    <!-- SVG Button -->
+                    <div>
+                      <svg onclick="toggleSidebar()" viewBox="0 0 46 46" fill="none" xmlns="http://www.w3.org/2000/svg"
+                        class="cursor-pointer w-[18px] h-[18px] md:w-[30px] md:h-[30px] lg:w-[46px] lg:h-[46px]">
+                        <path
+                          d="M11.5 9.1999C11.5 7.92969 12.5298 6.8999 13.8 6.8999H43.7C44.9702 6.8999 46 7.92969 46 9.1999C46 10.4701 44.9702 11.4999 43.7 11.4999H13.8C12.5298 11.4999 11.5 10.47 11.5 9.1999ZM43.7 20.6999H2.3C1.02979 20.6999 0 21.7298 0 22.9999C0 24.2701 1.02979 25.2999 2.3 25.2999H43.7C44.9702 25.2999 46 24.2701 46 22.9999C46 21.7298 44.9702 20.6999 43.7 20.6999ZM43.7 34.4999H23C21.7299 34.4999 20.7 35.5297 20.7 36.7999C20.7 38.07 21.7299 39.0999 23 39.0999H43.7C44.9702 39.0999 46 38.07 46 36.7999C46 35.5297 44.9702 34.4999 43.7 34.4999Z"
+                          fill="#C2A74E" />
+                      </svg>
+                    </div>
+                  </div>
                 </nav>
-            </header>
+              </header>
             <!-- header end -->
             <!-- line  -->
             <div class="relative border-t border-transparent h-2 w-full mt-8" style="
@@ -135,11 +134,11 @@
             border-image-slice: 1;
           "></div>
             <!-- bootcamp start -->
-            <div class="md:w-[1440px] mx-auto">
+            <div class="lg:w-[1440px] mx-auto">
                 <div
-                    class="md:w-1/2 h-[500px] flex items-center justify-center md:justify-start font-bold font-playfair">
+                    class="lg:w-1/2 h-[350px] lg:h-[500px] flex items-center justify-center lg:justify-start font-bold font-playfair">
                     <div>
-                        <h4 class="text-[50px] text-white">Services</h4>
+                        <h4 class="md:text-[50px] text-[34px] text-white">Services</h4>
                         <img src="assets/image/services/image 12 (2).png" alt="" class="mx-auto" />
                     </div>
                 </div>
@@ -147,30 +146,35 @@
             <!-- bootcamp end -->
             <!-- services star -->
             <section class="py-[20px] bg-bgprimery md:px-0 px-4">
-                <div class="md:w-[1440px] mx-auto md:mt-10 mt-4">
+                <div class="lg:w-[1440px] mx-auto md:mt-10 mt-4">
                     <div class="md:text-center">
-                        <h4 class="md:text-[36px] md:pb-5 text-2xl text-gold font-semibold font-cormorantgaramond">Our Service
+                        <h4 class="md:text-[36px] md:pb-5 text-2xl text-gold font-semibold font-cormorantgaramond">Our
+                            Service
                         </h4>
-                        <h2 class="md:text-[48px] text-4xl leading-[60px] text-white font-playfair font-bold">Unwind And Enjoy While
+                        <h2
+                            class="md:text-[40px] lg:text-[48px] text-4xl leading-[60px] text-white font-playfair font-bold">
+                            Unwind And
+                            Enjoy While
                             Our Team Of
                             <br> Skilled Barbers Pampers You
                         </h2>
                     </div>
-                    <div class="grid md:grid-cols-12 pt-10 gap-14">
-                        <div class="md:col-span-7">
+                    <div class="grid lg:grid-cols-12 pt-10 gap-14">
+                        <div class="lg:col-span-7">
                             <img src="assets/image/services/page/Rectangle 4312.png" alt="">
                         </div>
-                        <div class="md:col-span-5">
+                        <div class="lg:col-span-5">
                             <div class="bg-bgsecendary md:p-10 p-5 rounded-lg shadow-lg text-white ">
                                 <!-- Icon -->
-                                <div class="md:text-center md:w-1/3">
+                                <div class="lg:text-center md:w-1/3">
                                     <div class="flex ">
                                         <img src="assets/image/services/page/Frame (4).png" alt="Hair Coloring"
-                                            class="md:mx-auto" />
+                                            class="lg:mx-auto" />
                                     </div>
 
                                     <!-- Title -->
-                                    <h3 class="md:text-[26px] text-xl font-playfair font-normal text-gold md:py-0 py-3">
+                                    <h3
+                                        class="lg:text-[26px] md:text-[22px] text-xl font-playfair font-normal text-gold md:py-0 py-3">
                                         Hair Coloring</h3>
                                 </div>
 
@@ -248,17 +252,20 @@
                     </div>
                 </div>
 
-                <div class="my-10 text-center md:pb-12 md:pt-24">
-                    <h2 class="md:text-[48px] pb-5 text-3xl text-white font-playfair font-bold text-center">We Provide Better
+                <div class="my-10 text-center lg:pb-12 lg:pt-24">
+                    <h2
+                        class="lg:text-[48px] md:text-[36px] pb-5 text-3xl text-white font-playfair font-bold text-center">
+                        We Provide
+                        Better
                     </h2>
                     <img src="assets/image/services/image 12 (2).png" alt="" class="mx-auto">
                 </div>
-                <div class="md:w-[1440px] mx-auto mdpy-10 grid grid-cols-1 md:grid-cols-2 gap-7">
+                <div class="lg:w-[1440px] mx-auto md:py-10 grid grid-cols-1 lg:grid-cols-2 gap-7">
                     <!-- Card 1 -->
-                    <div class="flex items-center md:p-6 border border-white text-white">
+                    <div class="flex items-center lg:p-6 border md:m-2 lg:m-0 border-white text-white">
                         <img src="assets/image/services/icon/Frame (5).png" alt="Hair Coloring"
-                            class="md:mr-4 md:p-5 md:m-0 m-4 md:w-auto w-[5rem]" />
-                        <div class="md:px-5">
+                            class="lg:mr-4 lg:p-5 lg:m-0 m-4 md:w-auto w-[5rem]" />
+                        <div class="lg:px-5">
                             <h3 class="hover:text-gold font-playfair md:text-[24px] text-lg">Hair Coloring</h3>
                             <p class="md:leading-[30px] md:text-[20px] text-sm text-[#6E6B70]">
                                 Lorem Ipsum Dolor Sit Amet, Consectetur Adipiscing Elit. Maecenas Rutrum, Neque Euismod
@@ -268,11 +275,11 @@
                     </div>
 
                     <!-- Card 2 -->
-                    <div class="flex items-center md:p-6 border border-white text-white">
-                        <img src="assets/image/services/icon/Frame (6).png"
-                            class="md:mr-4 md:p-5 md:m-0 m-4 md:w-auto w-[5rem]" alt="Hair Coloring">
-                        <div class="md:px-5">
-                            <h3 class="hover:text-gold text-white font-playfair md:text-[24px] text-lg">Beard Trimming</h3>
+                    <div class="flex items-center lg:p-6 border md:m-2 lg:m-0 border-white text-white">
+                        <img src="assets/image/services/icon/Frame (6).png" alt="Beard Trimming"
+                            class="lg:mr-4 lg:p-5 lg:m-0 m-4 md:w-auto w-[5rem]" />
+                        <div class="lg:px-5">
+                            <h3 class="hover:text-gold font-playfair md:text-[24px] text-lg">Beard Trimming</h3>
                             <p class="md:leading-[30px] md:text-[20px] text-sm text-[#6E6B70]">
                                 Lorem Ipsum Dolor Sit Amet, Consectetur Adipiscing Elit. Maecenas Rutrum, Neque Euismod
                                 Ullamcorper Justo.
@@ -281,11 +288,11 @@
                     </div>
 
                     <!-- Card 3 -->
-                    <div class="flex items-center md:p-6 border border-white text-white">
+                    <div class="flex items-center lg:p-6 border md:m-2 lg:m-0 border-white text-white">
                         <img src="assets/image/services/icon/Frame (7).png" alt="Smooth Shave"
-                            class="md:mr-4 md:p-5 md:m-0 m-4 md:w-auto w-[5rem]" />
-                        <div class="md:px-5">
-                            <h3 class="hover:text-gold text-white font-playfair md:text-[24px] text-lg">Smooth Shave</h3>
+                            class="lg:mr-4 lg:p-5 lg:m-0 m-4 md:w-auto w-[5rem]" />
+                        <div class="lg:px-5">
+                            <h3 class="hover:text-gold font-playfair md:text-[24px] text-lg">Smooth Shave</h3>
                             <p class="md:leading-[30px] md:text-[20px] text-sm text-[#6E6B70]">
                                 Lorem Ipsum Dolor Sit Amet, Consectetur Adipiscing Elit. Maecenas Rutrum, Neque Euismod
                                 Ullamcorper Justo.
@@ -294,11 +301,11 @@
                     </div>
 
                     <!-- Card 4 -->
-                    <div class="flex items-center md:p-6 border border-white text-white">
+                    <div class="flex items-center lg:p-6 border md:m-2 lg:m-0 border-white text-white">
                         <img src="assets/image/services/icon/Group (2).png" alt="Face Masking"
-                            class="md:mr-4 md:p-5 md:m-0 m-4 md:w-auto w-[5rem]" />
-                        <div class="md:px-5">
-                            <h3 class="hover:text-gold text-white font-playfair md:text-[24px] text-lg">Face Masking</h3>
+                            class="lg:mr-4 lg:p-5 lg:m-0 m-4 md:w-auto w-[5rem]" />
+                        <div class="lg:px-5">
+                            <h3 class="hover:text-gold font-playfair md:text-[24px] text-lg">Face Masking</h3>
                             <p class="md:leading-[30px] md:text-[20px] text-sm text-[#6E6B70]">
                                 Lorem Ipsum Dolor Sit Amet, Consectetur Adipiscing Elit. Maecenas Rutrum, Neque Euismod
                                 Ullamcorper Justo.
@@ -307,11 +314,11 @@
                     </div>
 
                     <!-- Card 5 -->
-                    <div class="flex items-center md:p-6 border border-white text-white">
-                        <img src="assets/image/services/icon/Frame (8).png" alt="Face Masking"
-                            class="md:mr-4 md:p-5 md:m-0 m-4 md:w-auto w-[5rem]" />
-                        <div class="md:px-5">
-                            <h3 class="text-white hover:text-gold font-playfair md:text-[24px] text-lg">Hair Coloring</h3>
+                    <div class="flex items-center lg:p-6 border md:m-2 lg:m-0 border-white text-white">
+                        <img src="assets/image/services/icon/Frame (8).png" alt="Hair Coloring"
+                            class="lg:mr-4 lg:p-5 lg:m-0 m-4 md:w-auto w-[5rem]" />
+                        <div class="lg:px-5">
+                            <h3 class="hover:text-gold font-playfair md:text-[24px] text-lg">Hair Coloring</h3>
                             <p class="md:leading-[30px] md:text-[20px] text-sm text-[#6E6B70]">
                                 Lorem Ipsum Dolor Sit Amet, Consectetur Adipiscing Elit. Maecenas Rutrum, Neque Euismod
                                 Ullamcorper Justo.
@@ -320,11 +327,11 @@
                     </div>
 
                     <!-- Card 6 -->
-                    <div class="flex items-center md:p-6 border border-white text-white">
-                        <img src="assets/image/services/icon/Frame (9).png" alt="Face Masking"
-                            class="md:mr-4 md:p-5 md:m-0 m-4 md:w-auto w-[5rem]" />
-                        <div class="md:px-5">
-                            <h3 class="text-white hover:text-gold font-playfair md:text-[24px] text-lg">Hair styling</h3>
+                    <div class="flex items-center lg:p-6 border md:m-2 lg:m-0 border-white text-white">
+                        <img src="assets/image/services/icon/Frame (9).png" alt="Hair Styling"
+                            class="lg:mr-4 lg:p-5 lg:m-0 m-4 md:w-auto w-[5rem]" />
+                        <div class="lg:px-5">
+                            <h3 class="hover:text-gold font-playfair md:text-[24px] text-lg">Hair Styling</h3>
                             <p class="md:leading-[30px] md:text-[20px] text-sm text-[#6E6B70]">
                                 Lorem Ipsum Dolor Sit Amet, Consectetur Adipiscing Elit. Maecenas Rutrum, Neque Euismod
                                 Ullamcorper Justo.
@@ -333,11 +340,11 @@
                     </div>
 
                     <!-- Card 7 -->
-                    <div class="flex items-center md:p-6 border border-white text-white">
-                        <img src="assets/image/services/icon/Group (4).png" alt="Face Masking"
-                            class="md:mr-4 md:p-5 md:m-0 m-4 md:w-auto w-[5rem]" />
-                        <div class="md:px-5">
-                            <h3 class="text-white hover:text-gold font-playfair md:text-[24px] text-lg">Bright Facial</h3>
+                    <div class="flex items-center lg:p-6 border md:m-2 lg:m-0 border-white text-white">
+                        <img src="assets/image/services/icon/Group (4).png" alt="Bright Facial"
+                            class="lg:mr-4 lg:p-5 lg:m-0 m-4 md:w-auto w-[5rem]" />
+                        <div class="lg:px-5">
+                            <h3 class="hover:text-gold font-playfair md:text-[24px] text-lg">Bright Facial</h3>
                             <p class="md:leading-[30px] md:text-[20px] text-sm text-[#6E6B70]">
                                 Lorem Ipsum Dolor Sit Amet, Consectetur Adipiscing Elit. Maecenas Rutrum, Neque Euismod
                                 Ullamcorper Justo.
@@ -346,11 +353,11 @@
                     </div>
 
                     <!-- Card 8 -->
-                    <div class="flex items-center md:p-6 border border-white text-white">
-                        <img src="assets/image/services/icon/Group (3).png" alt="Face Masking"
-                            class="md:mr-4 md:p-5 md:m-0 m-4 md:w-auto w-[5rem]" />
-                        <div class="md:px-5">
-                            <h3 class="text-white hover:text-gold font-playfair md:text-[24px] text-lg">Hair Straight</h3>
+                    <div class="flex items-center lg:p-6 border md:m-2 lg:m-0 border-white text-white">
+                        <img src="assets/image/services/icon/Group (3).png" alt="Hair Straight"
+                            class="lg:mr-4 lg:p-5 lg:m-0 m-4 md:w-auto w-[5rem]" />
+                        <div class="lg:px-5">
+                            <h3 class="hover:text-gold font-playfair md:text-[24px] text-lg">Hair Straight</h3>
                             <p class="md:leading-[30px] md:text-[20px] text-sm text-[#6E6B70]">
                                 Lorem Ipsum Dolor Sit Amet, Consectetur Adipiscing Elit. Maecenas Rutrum, Neque Euismod
                                 Ullamcorper Justo.
@@ -359,11 +366,11 @@
                     </div>
 
                     <!-- Card 9 -->
-                    <div class="flex items-center md:p-6 border border-white text-white">
-                        <img src="assets/image/services/icon/Group (5).png" alt="Face Masking"
-                            class="md:mr-4 md:p-5 md:m-0 m-4 md:w-auto w-[5rem]" />
-                        <div class="md:px-5">
-                            <h3 class="text-white hover:text-gold font-playfair md:text-[24px] text-lg">Trimming</h3>
+                    <div class="flex items-center lg:p-6 border md:m-2 lg:m-0 border-white text-white">
+                        <img src="assets/image/services/icon/Group (5).png" alt="Trimming"
+                            class="lg:mr-4 lg:p-5 lg:m-0 m-4 md:w-auto w-[5rem]" />
+                        <div class="lg:px-5">
+                            <h3 class="hover:text-gold font-playfair md:text-[24px] text-lg">Trimming</h3>
                             <p class="md:leading-[30px] md:text-[20px] text-sm text-[#6E6B70]">
                                 Lorem Ipsum Dolor Sit Amet, Consectetur Adipiscing Elit. Maecenas Rutrum, Neque Euismod
                                 Ullamcorper Justo.
@@ -372,11 +379,11 @@
                     </div>
 
                     <!-- Card 10 -->
-                    <div class="flex items-center md:p-6 border border-white text-white">
-                        <img src="assets/image/services/icon/Group (6).png" alt="Face Masking"
-                            class="md:mr-4 md:p-5 md:m-0 m-4 md:w-auto w-[5rem]" />
-                        <div class="md:px-5">
-                            <h3 class="text-white hover:text-gold font-playfair md:text-[24px] text-lg">Aroma Therapy</h3>
+                    <div class="flex items-center lg:p-6 border md:m-2 lg:m-0 border-white text-white">
+                        <img src="assets/image/services/icon/Group (6).png" alt="Aroma Therapy"
+                            class="lg:mr-4 lg:p-5 lg:m-0 m-4 md:w-auto w-[5rem]" />
+                        <div class="lg:px-5">
+                            <h3 class="hover:text-gold font-playfair md:text-[24px] text-lg">Aroma Therapy</h3>
                             <p class="md:leading-[30px] md:text-[20px] text-sm text-[#6E6B70]">
                                 Lorem Ipsum Dolor Sit Amet, Consectetur Adipiscing Elit. Maecenas Rutrum, Neque Euismod
                                 Ullamcorper Justo.
@@ -389,14 +396,16 @@
                 <div class="bg-bgprimery py-16">
                     <div class="max-w-[1440px] mx-auto text-center">
                         <!-- Title Section -->
-                        <h4 class="text-gold text-[36px]  ont-semibold font-cormorantgaramond leading-5">Our Insta
+                        <h4 class="text-gold text-[18px] md:text-[36px]  ont-semibold font-cormorantgaramond leading-5">
+                            Our Insta
                             Moments</h4>
-                        <h2 class="text-white text-[48px] font-bold font-playfair mt-4 leading-[63px]">Follow On
+                        <h2 class="text-white md:text-[48px] text-[24px] font-bold font-playfair mt-4 leading-[63px]">
+                            Follow On
                             Instagram</h2>
                         <img src="assets/image/gallery/image 12.png" alt="Decorative Line" class="mx-auto mt-4">
 
                         <!-- Image Grid -->
-                        <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-6 gap-5  px-4 mt-10">
+                        <div class="md:grid hidden md:grid-cols-3 lg:grid-cols-6 gap-5  px-4 mt-10">
                             <div class="overflow-hidden">
                                 <img src="assets/image/instagram/Rectangle 31.png" alt="Instagram Moment 1"
                                     class="w-full h-auto object-cover transition-transform duration-300 hover:scale-105" />
@@ -422,22 +431,60 @@
                                     class="w-full h-auto object-cover transition-transform duration-300 hover:scale-105" />
                             </div>
                         </div>
+
+                        <div class="swiper instagramSwiper mt-10 md:hidden">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide grid grid-cols-2 gap-5 px-4">
+                                    <div class="overflow-hidden">
+                                        <img src="assets/image/instagram/Rectangle 31.png" alt="Instagram Moment 1"
+                                            class="w-full h-auto object-cover transition-transform duration-300 hover:scale-105" />
+                                    </div>
+                                    <div class="overflow-hidden">
+                                        <img src="assets/image/instagram/Rectangle 32.png" alt="Instagram Moment 2"
+                                            class="w-full h-auto object-cover transition-transform duration-300 hover:scale-105" />
+                                    </div>
+                                </div>
+                                <div class="swiper-slide grid grid-cols-2 gap-5 px-4">
+                                    <div class="overflow-hidden">
+                                        <img src="assets/image/instagram/Rectangle 33.png" alt="Instagram Moment 3"
+                                            class="w-full h-auto object-cover transition-transform duration-300 hover:scale-105" />
+                                    </div>
+                                    <div class="overflow-hidden">
+                                        <img src="assets/image/instagram/Rectangle 34.png" alt="Instagram Moment 4"
+                                            class="w-full h-auto object-cover transition-transform duration-300 hover:scale-105" />
+                                    </div>
+                                </div>
+                                <div class="swiper-slide grid grid-cols-2 gap-5 px-4">
+                                    <div class="overflow-hidden">
+                                        <img src="assets/image/instagram/Rectangle 35.png" alt="Instagram Moment 5"
+                                            class="w-full h-auto object-cover transition-transform duration-300 hover:scale-105" />
+                                    </div>
+                                    <div class="overflow-hidden">
+                                        <img src="assets/image/instagram/Rectangle 36.png" alt="Instagram Moment 6"
+                                            class="w-full h-auto object-cover transition-transform duration-300 hover:scale-105" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-pagination"></div>
+                        </div>
+                        <!-- instagram end -->
                     </div>
                 </div>
             </section>
             <!-- services end -->
             <!-- footer start -->
             <footer class="bg-bgsecendary text-white ">
-                <div class=" border-b border-[#5F5F5F] py-5 md:py-14">
-                    <div class="md:max-w-[1440px] mx-auto px-4">
-                        <div class="md:flex md:w-full md:justify-between grid grid-cols-2">
+                <div class=" border-b border-[#5F5F5F] py-5 lg:py-14">
+                    <div class="lg:max-w-[1440px] mx-auto px-4">
+                        <div class="lg:flex lg:w-full lg:justify-between grid grid-cols-2">
                             <!-- Left Column -->
-                            <div class="md:w-[28%] col-span-2 p-2">
+                            <div class="lg:w-[28%] col-span-2 p-2">
                                 <h2 class="md:text-[52px] text-[33.50px] font-cormorantgaramond leading-none font-bold">
                                     Move Onn</h2>
                                 <h3
                                     class="md:text-[29px] text-[19px] font-cormorantgaramond text-gold font-semibold pt-[-5px]">
-                                    The Salon</h3>
+                                    The
+                                    Salon</h3>
                                 <p class="md:text-[20px] text-[14px]  leading-6 font-light font-outfit">
                                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean commodo
                                     congue purus in pretium.
@@ -484,7 +531,7 @@
                             </div>
 
                             <!-- Quick Link -->
-                            <div class="md:w-[10%] grid-cols-1 py-5">
+                            <div class="lg:w-[10%] grid-cols-1 py-5">
                                 <h4 class="font-playfair text-[20px] md:text-[22px] text-gold mb-4">Quick Link</h4>
                                 <ul class="space-y-2">
                                     <li><a href="index.html"
@@ -509,7 +556,7 @@
                             </div>
 
                             <!-- Business Hours -->
-                            <div class="md:w-[15%] grid-cols-1 py-5">
+                            <div class="lg:w-[15%] grid-cols-1 py-5">
                                 <h4 class="text-[20px] md:text-[22px] font-medium font-playfair text-gold mb-4">Business
                                     Hours</h4>
                                 <ul class="space-y-2">
@@ -531,7 +578,7 @@
                             </div>
 
                             <!-- Information -->
-                            <div class="md:w-[28%] col-span-2 py-5">
+                            <div class="lg:w-[28%] col-span-2 py-5">
                                 <h4 class=" font-playfair text-[20px] md:text-[22px] font-normal *: text-gold mb-4">
                                     Information</h4>
                                 <ul class="space-y-4">
@@ -548,7 +595,8 @@
 
                                         </span>
                                         <p class="font-outfit text-[14px] md:text-[18px] leading-6">G-1-B, SNS
-                                            SparkleCity, Light Road next to Shah Virchand
+                                            SparkleCity, Light Road next
+                                            to Shah Virchand
                                             Govanji Jewellers City
                                             Light Town, AthwaSurat, Gujarat 395007 India</p>
                                     </li>
@@ -599,12 +647,12 @@
         <div id="sidebar"
             class="fixed inset-0 h-full w-full text-white transform -translate-x-full transition-transform duration-300 z-50"
             style="
-        background-image: url('assets/image/Rectangle 1.png');
-        background-size: cover;
-        background-position: center;
-      ">
+          background-image: url('assets/image/Rectangle 1.png');
+          background-size: cover;
+          background-position: center;
+        ">
             <div class="absolute -z-10 inset-0 bg-black bg-opacity-75" style="backdrop-filter: blur(10px);"></div>
-            <div class="flex flex-col md:justify-between h-screen px-10 md:py-16 md:w-[1440px] mx-auto z-10">
+            <div class="flex flex-col lg:justify-between h-screen px-10 md:py-16 lg:w-[1440px] mx-auto z-10">
 
                 <div class="flex justify-between items-center">
                     <div class="mt-3">
@@ -618,7 +666,7 @@
                         </h5>
                     </div>
                     <div>
-                        <svg width="37" height="36" viewBox="0 0 37 36" class="md:block hidden"
+                        <svg width="37" height="36" viewBox="0 0 37 36" class="lg:block hidden"
                             onclick="toggleSidebar()" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <g clip-path="url(#clip0_68_1327)">
                                 <path
@@ -631,7 +679,7 @@
                                 </clipPath>
                             </defs>
                         </svg>
-                        <svg width="32" height="32" viewBox="0 0 37 36" class="md:hidden" onclick="toggleSidebar()"
+                        <svg width="32" height="32" viewBox="0 0 37 36" class="lg:hidden" onclick="toggleSidebar()"
                             fill="none" xmlns="http://www.w3.org/2000/svg">
                             <g clip-path="url(#clip0_68_1327)">
                                 <path
@@ -647,25 +695,25 @@
                     </div>
                 </div>
 
-                <div class="md:flex md:justify-between md:items-center">
-                    <nav class="space-y-6 md:w-1/4 w-full text-center md:text-left">
+                <div class="lg:flex lg:justify-between lg:items-center">
+                    <nav class="space-y-6 md:space-y-4 lg:space-y-6 lg:w-1/4 w-full text-center lg:text-left">
                         <a href="/index.html"
-                            class="md:text-[48px] text-[24px] font-medium font-playfair block  hover:underline">Home</a>
+                            class="lg:text-[48px] md:text-[36px] text-[24px] font-medium font-playfair block  hover:underline">Home</a>
                         <a href="/aboutus.html"
-                            class="md:text-[48px] text-[24px] font-medium font-playfair block hover:underline">About
+                            class="lg:text-[48px] md:text-[36px] text-[24px] font-medium font-playfair block hover:underline">About
                             Us</a>
                         <a href="/services.html"
-                            class="md:text-[48px] text-[24px] font-medium font-playfair text-gold block hover:underline">Services</a>
+                            class="lg:text-[48px] md:text-[36px] text-[24px] font-medium font-playfair block text-gold hover:underline">Services</a>
                         <a href="/gallery.html"
-                            class="md:text-[48px] text-[24px] font-medium font-playfair block hover:underline">Gallery</a>
+                            class="lg:text-[48px] md:text-[36px] text-[24px] font-medium font-playfair block hover:underline">Gallery</a>
                         <a href="/blog.html"
-                            class="md:text-[48px] text-[24px] font-medium font-playfair block hover:underline">Blog</a>
+                            class="lg:text-[48px] md:text-[36px] text-[24px] font-medium font-playfair block hover:underline">Blog</a>
                         <a href="/contectus.html"
-                            class="md:text-[48px] text-[24px] font-medium font-playfair block hover:underline">Contact
+                            class="lg:text-[48px] md:text-[36px] text-[24px] font-medium font-playfair block hover:underline">Contact
                             Us</a>
                     </nav>
 
-                    <div class="space-y-4 w-1/2 p-8 hidden md:block">
+                    <div class="space-y-4 w-1/2 p-8 hidden lg:block">
 
                         <div class="flex items-start space-x-4 py-6">
                             <div class="flex items-center justify-center  bg-gold p-3 rounded-full ">
@@ -743,6 +791,17 @@
         sidebar.classList.toggle("-translate-x-full");
     }
 
+</script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script>
+    const instagramSwiper = new Swiper('.instagramSwiper', {
+        slidesPerView: 1, // Display one set of two divs per slide
+        spaceBetween: 20, // Spacing between slides
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true, // Pagination is clickable
+        },
+    });
 </script>
 
 </html>
